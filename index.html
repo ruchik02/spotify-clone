@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Spotify</title>
+    <!-- link of favicon -->
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM" type="image/x-icon">
+    <!-- link of font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- link of css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <!-- unordered list -->
+        <ul>
+            <li class="brand"><img src="img/logo.png" alt="">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <!-- main part -->
+    <!-- in this part we can also remove the images because we already used through javascript -->
+    <div class="container">
+        <div class="song-list">
+            <h1>Best of Arijit Songs</h1>
+            <div class="song-item-container">
+            <div class="song-item">
+                <img src="img/1.jpg" alt="1">
+                <span class="song-name" >khairiyat</span>
+                <span class="song-list-play"><span class="time">5:34 <i id="0" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/2.jpg" alt="2">
+                <span  class="song-name">Enna Sona</span>
+                <span class="song-list-play"><span class="time">7:35 <i id="1" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/3.jpg" alt="3">
+                <span  class="song-name">Soch Na Sake</span>
+                <span class="song-list-play"><span class="time">10:00 <i id="2" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/4.jpg" alt="4">
+                <span  class="song-name">Channa Mereya</span>
+                <span class="song-list-play"><span class="time">6:06 <i id="3" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/5.jpg" alt="song">
+                <span  class="song-name">Hawayein</span>
+                <span class="song-list-play"><span class="time">4:37 <i id="4" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/6.jpg" alt="song">
+                <span  class="song-name">Agar Tum Sath Ho</span>
+                <span class="song-list-play"><span class="time">5:34 <i id="5" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/7.jpg" alt="song">
+                <span  class="song-name">Hamdard</span>
+                <span class="song-list-play"><span class="time">5:34 <i id="6" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/8.jpg" alt="song">
+                <span  class="song-name">Phir Kabhi</span>
+                <span class="song-list-play"><span class="time">9:30 <i id="7" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/9.jpg" alt="song">
+                <span  class="song-name">Galti Se Mistake</span>
+                <span class="song-list-play"><span class="time">7:40 <i id="8" class="far fa-play-circle song-item-play "></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/10.jpg" alt="song">
+                <span  class="song-name">Kabira</span>
+                <span class="song-list-play"><span class="time">6:04 <i id="9" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+            <div class="song-item">
+                <img src="img/11.jpg" alt="song">
+                <span  class="song-name">Naina</span>
+                <span class="song-list-play"><span class="time">10:34 <i id="10" class="far fa-play-circle song-item-play"></i id=""></span></span>
+            </div>
+        </div>
+    </div>
+        <div class="song-banner"></div>
+    </div>
+    <!-- bottom part -->
+    <div class="bottom">
+        <input type="range" name="range" id="progressBar" min="0" max="100" value="0">
+        <div class="icons">
+            <!-- fontawesome icon -->
+            <i  class="fas fa-3x fa-step-backward" id="previous"></i >
+            <i  class="far fa-3x fa-play-circle" id="masterPlay"></i >
+            <i  class="fas fa-3x fa-step-forward" id="next"></i > 
+        </div>
+        <div class="song-info">
+            <img src="img/playing.gif" width="43px" alt="gif" id="gif" >
+            <span id="master-song-name">khairiyat-Arijit Singh</span>
+        </div>
+    </div>
+    <!-- link of js -->
+    <script src="app.js"></script>
+</body>
+</html>

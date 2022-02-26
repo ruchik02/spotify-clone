@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+/* body */
+body{
+    background-color: rgb(238, 220, 198);
+}
+/* universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav */
+nav{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+/* ul style */
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+/* li style */
+nav ul li {
+    padding: 0 15px;
+}
+/* logo style */
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+/* img */
+.brand img{
+    width: 45px;
+    padding: 0 8px;
+}
+/* h1 style */
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+/* main part container */
+.container{
+    min-height: 72vh;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 15px;
+    padding: 34px;
+    background-image: url('img/arjit.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* main conatiner of song */
+.song-item-container{
+    margin-top: 64px;
+}
+/* bottom */
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.89);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+/* icons */
+.icons{
+    margin-top: 10px;
+}
+.icons i{
+    cursor: pointer;
+}
+/* input part */
+#progressBar{
+    width: 85vw;
+    cursor: pointer;
+}
+/* songitem style */
+.song-item{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 500px;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+
+}
+/* album img style */
+.song-item img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+/* time in song like duration */
+.time{
+    margin:0 20px;
+    padding:0 30px ;
+}
+/* play button */
+.time i{
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: medium;
+}
+/* song info */
+.song-info{
+    position: absolute;
+    left: 7vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* song-info img */
+.song-info img{
+   opacity: 0;
+   transition: opacity 0.4s ease-in;
+}
